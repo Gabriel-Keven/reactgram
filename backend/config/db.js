@@ -5,7 +5,7 @@ const dbPassword = process.env.DB_PASS;
 const conn = async () => {
   try {
     const dbConn = await mongoose.connect(
-      `mongodb+srv://${dbUser}:<${dbPassword}>@cluster0.o6iaf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
+      `mongodb://127.0.0.1:27017/ReactGram`
     );
     console.log("Conectou ao banco de dados!");
  
